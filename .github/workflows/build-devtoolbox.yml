@@ -14,7 +14,7 @@ name: build-devtoolbox
 env:
   IMAGE_NAME: devtoolbox
   IMAGE_TAGS: latest
-  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
+  REGISTRY: ghcr.io
 
 jobs:
   build:
