@@ -32,3 +32,5 @@ wl-clipboard
 zellij
 zsh
 zstd
+build-base
+cargo
