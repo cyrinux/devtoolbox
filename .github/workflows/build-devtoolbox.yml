@@ -12,7 +12,7 @@ on:
 name: build-devtoolbox
 
 env:
-  IMAGE_NAME: devtoolbox
+  IMAGE_NAME: ${{ github.repository }}
   IMAGE_TAGS: latest
   REGISTRY: ghcr.io
 
