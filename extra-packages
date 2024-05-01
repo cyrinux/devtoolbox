@@ -1,7 +1,7 @@
 age
 atuin
-btop
 bat
+btop
 chezmoi
 clipboard
 cosign
@@ -12,6 +12,7 @@ ffmpeg
 fzf
 github-cli
 helix
+icu-data-full
 just
 make
 micro
@@ -26,8 +27,8 @@ ripgrep
 speedtest-cli
 starship
 vimdiff
+wget
 wl-clipboard
 zellij
-zstd
 zsh
-wget
+zstd
