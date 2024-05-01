@@ -1,17 +1,16 @@
-name: build-devtoolbox
-
 on:
   pull_request:
-    branches:
-      - main
+    branches: ["main"]
   schedule:
     - cron: "0 0 * * TUE"
   push:
     branches: ["main"]
-    # Publish semver tags as releases.
     tags: ["v*.*.*"]
     paths-ignore:
       - "**/README.md"
+
+name: build-devtoolbox
+
 env:
   IMAGE_NAME: devtoolbox
   IMAGE_TAGS: latest
