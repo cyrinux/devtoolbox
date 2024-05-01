@@ -13,8 +13,9 @@ RUN rm /extra-packages
 
 RUN   ln -fs /bin/sh /usr/bin/sh && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
-      ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/flatpak && \ 
+      ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/flatpak && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/podman && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/rpm-ostree && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/transactional-update
-     
+
+RUN  wget -qO- https://github.com/jetify-com/devbox/releases/download/0.10.6/devbox_0.10.6_linux_amd64.tar.gz | tar xvz -C /usr/local/bin
